@@ -1,6 +1,13 @@
 # Body Mass Index calculator
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
+try:
+    height = float(input("enter your height in m: "))
+except ValueError:
+    print("invalid input")
+    exit('bye')
+try:
+    weight = float(input("enter your weight in kg: "))
+except ValueError:
+    print("invalid input")
 
 # Add decimal point at index 1 if not present
 
@@ -10,18 +17,16 @@ if height[1] != ".":
 
 
 # calculate BMI using formula from wikipedia (https://en.wikipedia.org/wiki/Body_mass_index)
-BMI = float(weight) / float(height) ** 2
+bmi = round(weight / height ** 2)
 
 
-# if BMI is less than 18.5, print "underweight"
-if BMI < 18.5:
-    print("Your BMI index " + str(int(BMI)) + " wou are underweight\n")
-# if BMI is between 18.5 and 25, print "normal"
-elif BMI >= 18.5 and BMI <= 25:
-    print("Your BMI index " + str(int(BMI)) + " you are normal\n")
-# if BMI is between 25 and 30, print "overweight"
-elif BMI > 25 and BMI <= 30:
-    print("Your BMI index " + str(int(BMI)) + " you are overweight")
-# if BMI is greater than 30, print "obese"
-elif BMI > 30:
-    print("Your BMI index " + str(int(BMI)) + " you are obese")
+if bmi < 18.5:
+    print(f"Your BMI is {bmi}, you are underweight.")
+elif bmi >= 18.5 and bmi <= 25:
+    print(f"Your BMI is {bmi}, you have a normal weight")
+elif bmi > 25 and bmi <= 30:
+    print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif bmi > 30:
+    print(f"Your BMI is {bmi}, you are obese.")
+else:
+    print(f"Your BMI is {bmi}, you are clinically obese.")
