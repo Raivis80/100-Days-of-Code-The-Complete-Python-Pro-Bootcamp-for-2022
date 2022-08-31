@@ -24,3 +24,7 @@
 - While Loops
 #### day 7
 - Hangman Game
+#### day 8
+- Paint area calculator
+- Prime Number Checker
+- Ceasar Cipher Encoder
