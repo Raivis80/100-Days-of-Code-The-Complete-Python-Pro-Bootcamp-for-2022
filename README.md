@@ -28,3 +28,10 @@
 - Paint area calculator
 - Prime Number Checker
 - Ceasar Cipher Encoder
+#### day 9
+- Grade Calculator
+- Secret auction
+#### day 10
+- Convert to title case
+- Days in month
+- Calculator
