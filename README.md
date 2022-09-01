@@ -20,7 +20,7 @@
 - highest score
 - PyPassword Generator
 #### day 6
-- Functonal Programing
+- Functional Programing
 - While Loops
 #### day 7
 - Hangman Game
@@ -35,3 +35,5 @@
 - Convert to title case
 - Days in month
 - Calculator
+#### day 11
+- Blackjack
