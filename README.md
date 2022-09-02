@@ -37,3 +37,5 @@
 - Calculator
 #### day 11
 - Blackjack
+#### day 12
+- Number Guessing Game
