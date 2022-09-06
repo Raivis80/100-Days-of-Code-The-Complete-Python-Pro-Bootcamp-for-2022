@@ -39,3 +39,5 @@
 - Blackjack
 #### day 12
 - Number Guessing Game
+#### day 13
+- Debugging
