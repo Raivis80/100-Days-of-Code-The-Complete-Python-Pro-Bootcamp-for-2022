@@ -1,4 +1,4 @@
-# TODO:1 import data, logo, random
+#import data, logo, random
 import random
 from art import logo, vs
 from game_data import data
@@ -30,9 +30,9 @@ game_should_continue = True
 account_b = get_random_account()
 
 
-#TODO:5 Score keeping
+#Score keeping
 while game_should_continue:
-    #TODO:7 Making account at position B become the next account at position A
+    #Making account at position B become the next account at position A
     account_a = account_b
     account_b = get_random_account()
     
@@ -43,10 +43,10 @@ while game_should_continue:
     print(vs)
     print(f"Against B: {format_data(account_b)}")
 
-    #TODO:2 Ask user for a guess
+    #Ask user for a guess
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
-    #TODO:3 Check if user is correct
+    #Check if user is correct
 
     ## Get follower count of each account
     a_followers_count = account_a["follower_count"]
@@ -55,7 +55,7 @@ while game_should_continue:
     is_correct = check_answer(guess, a_followers_count, b_followers_count)
 
 
-    #TODO:4 Give user feedback on their guess
+    #Give user feedback on their guess
     if is_correct:
         score += 1
         print(f"You got it right! Current score: {score}")
