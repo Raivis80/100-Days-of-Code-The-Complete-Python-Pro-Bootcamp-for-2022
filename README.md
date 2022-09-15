@@ -41,3 +41,11 @@
 - Number Guessing Game
 #### day 13
 - Debugging
+#### day 14
+- Higher Lower Game
+#### day 15
+- Coffee Machine
+#### day 16
+- OOP
+- Turtle
+- OOP coffee machine
