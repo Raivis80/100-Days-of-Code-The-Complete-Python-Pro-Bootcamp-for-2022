@@ -51,3 +51,6 @@
 - OOP coffee machine
 #### day 17
 - Quiz Game OOP
+#### day 18
+- Graphical User Interface (GUI)
+- Hirst Painting
