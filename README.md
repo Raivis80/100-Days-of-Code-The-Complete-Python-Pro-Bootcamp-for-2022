@@ -54,3 +54,7 @@
 #### day 18
 - Graphical User Interface (GUI)
 - Hirst Painting
+#### day 19
+- instances state and higher order functions
+- Etch-a-sketch
+- Object state instance
