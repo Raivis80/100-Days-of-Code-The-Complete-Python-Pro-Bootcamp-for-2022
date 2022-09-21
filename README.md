@@ -57,4 +57,7 @@
 #### day 19
 - instances state and higher order functions
 - Etch-a-sketch
-- Object state instance
+- Turtle racing game
+#### day 20, 21
+- Snake game
+- Slice list and tuples
