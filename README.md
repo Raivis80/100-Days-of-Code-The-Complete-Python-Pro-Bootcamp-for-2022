@@ -61,3 +61,5 @@
 #### day 20, 21
 - Snake game
 - Slice list and tuples
+#### day 22
+- Pong game
