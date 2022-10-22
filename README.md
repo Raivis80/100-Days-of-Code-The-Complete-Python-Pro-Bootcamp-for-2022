@@ -65,3 +65,12 @@
 - Pong game
 #### day 23
 - Turtle crossing game
+#### day 24
+- Improve Snake game
+  - Scoreboard high score
+- Files, Directories and Paths
+  - Reading files writing files
+  - File paths
+  - Directories
+  - Absolute and relative paths
+  - Mail merge project
