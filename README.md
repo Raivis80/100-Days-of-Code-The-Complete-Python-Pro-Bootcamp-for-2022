@@ -74,3 +74,10 @@
   - Directories
   - Absolute and relative paths
   - Mail merge project
+#### day 25
+- Working with CSV files
+  - Reading CSV files
+  - Writing CSV files
+  - Pandas
+- Squirrel Census Data Analysis
+- US States Game
