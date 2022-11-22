@@ -81,3 +81,12 @@
   - Pandas
 - Squirrel Census Data Analysis
 - US States Game
+#### day 26
+- List Comprehension
+  - Squaring numbers
+  - Filtering numbers
+  - Data Overlap
+  - US States Game
+- Dictionary Comprehension
+- Pandas Dataframe
+- Nato Alphabet Project
