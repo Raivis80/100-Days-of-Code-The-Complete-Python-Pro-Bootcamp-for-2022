@@ -98,3 +98,6 @@
   - Widgets layout
 - *args and **kwargs
 - Mile to Km Converter
+#### day 28
+- Tkinter dynamic typing
+- Pomodoro GUI App
