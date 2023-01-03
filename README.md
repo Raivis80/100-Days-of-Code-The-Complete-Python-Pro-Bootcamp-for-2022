@@ -101,3 +101,6 @@
 #### day 28
 - Tkinter dynamic typing
 - Pomodoro GUI App
+#### day 29
+- Tkinter grid layout
+- Password Manager
