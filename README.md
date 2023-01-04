@@ -104,3 +104,8 @@
 #### day 29
 - Tkinter grid layout
 - Password Manager
+#### day 30
+- error handling and exceptions
+- JSON files and APIs
+#### day 31
+- Flashcard App capstone project
