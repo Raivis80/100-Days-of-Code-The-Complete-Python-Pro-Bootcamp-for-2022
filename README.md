@@ -109,3 +109,6 @@
 - JSON files and APIs
 #### day 31
 - Flashcard App capstone project
+#### day 32
+- SMTPLIB and email
+- Automated email sender
