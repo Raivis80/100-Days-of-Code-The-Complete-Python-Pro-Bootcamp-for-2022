@@ -112,3 +112,7 @@
 #### day 32
 - SMTPLIB and email
 - Automated email sender
+#### day 33
+- API 
+- Kanye quotes API
+- ISS Overhead Notifier
