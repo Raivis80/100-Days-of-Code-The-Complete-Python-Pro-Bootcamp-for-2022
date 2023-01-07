@@ -116,3 +116,8 @@
 - API 
 - Kanye quotes API
 - ISS Overhead Notifier
+#### day 34
+- API
+- Data types
+- Type hints
+- Guizzler API quiz game
