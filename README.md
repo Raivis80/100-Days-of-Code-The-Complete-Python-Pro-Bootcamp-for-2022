@@ -121,3 +121,8 @@
 - Data types
 - Type hints
 - Guizzler API quiz game
+#### day 35
+- API authentication
+- Weather API project
+- Send SMS with Twilio
+- Understand Environment Variables and Handle API Keys
