@@ -126,3 +126,5 @@
 - Weather API project
 - Send SMS with Twilio
 - Understand Environment Variables and Handle API Keys
+#### day 36
+- Stock Trading News Alert
