@@ -128,3 +128,7 @@
 - Understand Environment Variables and Handle API Keys
 #### day 36
 - Stock Trading News Alert
+#### day 37
+- HTTP requests
+- Advanced authentication using headers
+- Habit tracker project
