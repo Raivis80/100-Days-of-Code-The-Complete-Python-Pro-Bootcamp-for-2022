@@ -132,3 +132,7 @@
 - HTTP requests
 - Advanced authentication using headers
 - Habit tracker project
+#### day 38
+- HTTP requests and APIs
+- Google sheet API
+- Exercise tracking sheet project
