@@ -136,3 +136,8 @@
 - HTTP requests and APIs
 - Google sheet API
 - Exercise tracking sheet project
+#### day 39
+- HTTP requests and APIs
+- Get IATA codes from flight search using KIWI API
+- Google sheet with Sheety API
+- Flight price tracker project
