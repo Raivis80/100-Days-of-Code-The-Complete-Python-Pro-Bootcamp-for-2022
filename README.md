@@ -141,3 +141,7 @@
 - Get IATA codes from flight search using KIWI API
 - Google sheet with Sheety API
 - Flight price tracker project
+#### day 40, 41, 42, 43, 44
+- HtML and CSS
+#### day 45
+- Web scraping with BeautifulSoup
