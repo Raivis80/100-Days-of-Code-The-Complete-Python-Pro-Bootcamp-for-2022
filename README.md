@@ -145,3 +145,7 @@
 - HtML and CSS
 #### day 45
 - Web scraping with BeautifulSoup
+#### day 46
+- Spotify API and Web scraping
+#### day 47
+- Amazon price tracker project
