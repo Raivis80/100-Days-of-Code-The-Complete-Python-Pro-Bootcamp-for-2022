@@ -149,3 +149,6 @@
 - Spotify API and Web scraping
 #### day 47
 - Amazon price tracker project
+#### day 48
+- Web scraping with Selenium webdriver
+- Game playing bot cookie clicker
