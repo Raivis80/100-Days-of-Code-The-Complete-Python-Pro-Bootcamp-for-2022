@@ -30,14 +30,15 @@ class FlightSearch:
         query = {
             "fly_from": origin_city_code,
             "fly_to": destination_city_code,
-            "date_from": from_time.strftime("%d/%m/%Y"),
-            "date_to": to_time.strftime("%d/%m/%Y"),
-            "nights_in_dst_from": 7,
-            "nights_in_dst_to": 30,
-            "flight_type": "round",
-            "one_for_city": 1,
+            # "date_from": from_time.strftime("%d/%m/%Y"),
+            # "date_to": to_time.strftime("%d/%m/%Y"),
+            "date_from": from_time,
+            "date_to": to_time,
+            "flight_type": "oneway",
+            "adults": 2,
+            "infants": 1,
             "max_stopovers": 0,
-            "curr": "GBP"
+            "curr": "USD"
         }
 
         response = requests.get(
@@ -47,6 +48,7 @@ class FlightSearch:
         )
 
         try:
+            print(response.json()["data"][0])
             data = response.json()["data"][0]
             print(f"{destination_city_code} {data['price']}")
         except IndexError:
@@ -60,7 +62,7 @@ class FlightSearch:
                 destination_city=data["route"][0]["cityTo"],
                 destination_airport=data["route"][0]["flyTo"],
                 out_date=data["route"][0]["local_departure"].split("T")[0],
-                return_date=data["route"][1]["local_departure"].split("T")[0],
+                return_date=data["route"][0]["local_departure"].split("T")[0],
 
                 deap_link=data["deep_link"]
             )

@@ -10,47 +10,66 @@ data_manager = DataManager()
 sheet_data = data_manager.get_destination_data()
 flight_search = FlightSearch()
 
-ORIGIN_CITY_IATA = "OSL"
+ORIGIN_CITY_IATA = "MIA"
 
-if sheet_data[0]["iataCode"] == "":
-    city_names = [row["city"] for row in sheet_data]
-    codes = flight_search.get_destination_codes(city_names)
-    data_manager.update_destination_codes()
-    sheet_data = data_manager.get_destination_data()
+# if sheet_data[0]["iataCode"] == "":
+#     city_names = [row["city"] for row in sheet_data]
+#     codes = flight_search.get_destination_codes(city_names)
+#     data_manager.update_destination_codes()
+#     sheet_data = data_manager.get_destination_data()
+#
+# destinations = {
+#     data["iataCode"]: {
+#         "id": data["id"],
+#         "city": data["city"],
+#         "price": data["lowestPrice"]
+#     }for data in sheet_data}
+#
+# tomorrow = datetime.now() + timedelta(days=1)
+# six_month_from_today = datetime.now() + timedelta(days=(6 * 30))
 
-destinations = {
-    data["iataCode"]: {
-        "id": data["id"],
-        "city": data["city"],
-        "price": data["lowestPrice"]
-    }for data in sheet_data}
+# for destination_code in destinations:
+#     flight = flight_search.check_flights(
+#         ORIGIN_CITY_IATA,
+#         destination_code,
+#         from_time=tomorrow,
+#         to_time=six_month_from_today
+#     )
+#     if flight is None:
+#         continue
+#
+#     if flight.price < destinations[destination_code]["price"]:
+#
+#         users = UserManager().get_users()
+#         emails = [row["email"] for row in users]
+#         names = [row["firstName"] for row in users]
+#
+#         message = f"Low price alert! Only {flight.price}GBP to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
+#         if flight.stop_overs > 0:
+#             message += f"\n\nFlight has {flight.stop_overs}, via {flight.via_city}."
+#
+#         link = flight.deap_link
+#
+#         NotificationManager().send_emails(emails, message, link)
 
-tomorrow = datetime.now() + timedelta(days=1)
-six_month_from_today = datetime.now() + timedelta(days=(6 * 30))
-
-for destination_code in destinations:
-    flight = flight_search.check_flights(
+flight = flight_search.check_flights(
         ORIGIN_CITY_IATA,
-        destination_code,
-        from_time=tomorrow,
-        to_time=six_month_from_today
+        "NYC",
+        from_time="2023-02-09",
+        to_time="2023-02-09"
     )
-    if flight is None:
-        continue
+print(flight)
 
-    if flight.price < destinations[destination_code]["price"]:
+if flight is None:
+    print("No flights found.")
 
-        users = UserManager().get_users()
-        emails = [row["email"] for row in users]
-        names = [row["firstName"] for row in users]
+message = f"Low price alert! Only {flight.price}GBP to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
+if flight.stop_overs > 0:
+    message += f"\n\nFlight has {flight.stop_overs}, via {flight.via_city}."
 
-        message = f"Low price alert! Only {flight.price}GBP to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
-        if flight.stop_overs > 0:
-            message += f"\n\nFlight has {flight.stop_overs}, via {flight.via_city}."
+link = flight.deap_link
 
-        link = flight.deap_link
-
-        NotificationManager().send_emails(emails, message, link)
+NotificationManager().send_emails(["edgarstattoo@gmail.com", "rp42dev@gmail.com"], message, link)
 
 # user_manager = UserManager()
 # user_manager.create_user()

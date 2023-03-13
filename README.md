@@ -152,3 +152,5 @@
 #### day 48
 - Web scraping with Selenium webdriver
 - Game playing bot cookie clicker
+#### day 49
+- LinkedIn bot project - apply to jobs automatically
