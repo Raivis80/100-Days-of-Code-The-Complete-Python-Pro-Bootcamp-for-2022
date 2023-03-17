@@ -158,3 +158,5 @@
 - Tinder bot project - automate swiping
 #### day 52
 - Instagram bot project - automate following
+#### day 53
+- Daft bot project - automate searching for properties
