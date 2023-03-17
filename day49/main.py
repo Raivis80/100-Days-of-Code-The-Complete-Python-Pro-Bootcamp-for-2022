@@ -18,7 +18,7 @@ PHONE = os.environ.get("PHONE")
 service = Service("D:\development\chromedriver.exe")
 driver = webdriver.Chrome(options=chrome_options, service=service)
 
-driver.get("https://www.linkedin.com/jobs/search/?alertAction=viewjobs&currentJobId=3521134572&distance=25&f_AL=true&f_E=1%2C2%2C3&f_JT=F%2CC&f_TPR=a1678644238-&f_WT=1%2C2%2C3&geoId=105178154&keywords=frontend%20developer&location=Dublin%2C%20County%20Dublin%2C%20Ireland&sortBy=R")
+driver.get("https://www.linkedin.com/jobs/search/?currentJobId=3514925689&f_AL=true&f_E=1%2C2%2C3&f_JT=F%2CP%2CC%2CI&f_WT=2&geoId=104738515&keywords=web%20developer%20junior&location=Ireland&refresh=true")
 sign_in_button = driver.find_element("link text", "Sign in")
 sign_in_button.click()
 

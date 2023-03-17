@@ -154,3 +154,5 @@
 - Game playing bot cookie clicker
 #### day 49
 - LinkedIn bot project - apply to jobs automatically
+#### day 50
+- Tinder bot project - automate swiping
