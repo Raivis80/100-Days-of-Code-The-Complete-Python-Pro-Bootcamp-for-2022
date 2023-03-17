@@ -156,3 +156,5 @@
 - LinkedIn bot project - apply to jobs automatically
 #### day 50
 - Tinder bot project - automate swiping
+#### day 52
+- Instagram bot project - automate following
