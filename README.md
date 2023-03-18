@@ -160,3 +160,5 @@
 - Instagram bot project - automate following
 #### day 53
 - Daft bot project - automate searching for properties
+#### day 54
+- Introducting Flask 
