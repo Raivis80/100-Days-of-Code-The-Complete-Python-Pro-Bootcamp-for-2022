@@ -162,3 +162,9 @@
 - Daft bot project - automate searching for properties
 #### day 54
 - Introducting Flask 
+#### day 55
+- Flask and Higher Lower Game
+#### day 56
+- Flask and personal site
+#### day 57
+- Flask and blog
