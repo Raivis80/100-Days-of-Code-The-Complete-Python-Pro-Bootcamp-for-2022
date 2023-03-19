@@ -175,3 +175,5 @@
 - Blog project - Flask and Bootstrap
 #### day 60
 - Flask POST requests and forms
+#### day 61
+- Flask advanced forms and validation
