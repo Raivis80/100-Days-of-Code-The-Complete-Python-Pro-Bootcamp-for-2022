@@ -11,11 +11,27 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="#">Fractal</a></h1>
-			</header>
 
+				<nav>
+					<a href="{{ url_for('get_blog') }}" class="logo">Blog</a>
+				</nav>
+
+			</header>
+		<h1><a href="#">Fractal {{ num }}</a></h1>
+				{% if name %}
+					<p>Hi {{ name | capitalize }}!</p>
+				{% else %}
+					<p>Hi there!</p>
+				{% endif %}
+				{% if gender %}
+					<p> I think you are {{ gender }} </p>
+				{% endif %}
+				{% if age %}
+					<p> And maybe you are {{ age }} years old </p>
+				{% endif %}
 
 			<footer id="footer">
+				<p> Copyright @ {{ year }} By <a href="https://www.linkedin.com/in/rp42/">Raivis Petrovskis</a></p>
 			</footer>
 
 		<!-- Scripts -->
