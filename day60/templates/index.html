@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Fractal by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+			</header>
+		<h1><a href="#">Flask make POST request</a></h1>
+		<p>Flask make POST request</p>
+
+		<form action="{{ url_for('receive_data') }}" method="POST">
+			<input type="text" name="name" placeholder="Enter your name">
+			<input type="password" name="password" placeholder="Enter your password">
+			<input type="submit" value="Submit">
+		</form>
+
+
+			<footer id="footer">
+				<p> Copyright @ {{ year }} By <a href="https://www.linkedin.com/in/rp42/">Raivis Petrovskis</a></p>
+			</footer>
+
+	</body>
+</html>

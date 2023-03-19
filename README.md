@@ -173,3 +173,5 @@
 - TinDog project - Tinder for dogs
 #### day 59
 - Blog project - Flask and Bootstrap
+#### day 60
+- Flask POST requests and forms
