@@ -168,3 +168,8 @@
 - Flask and personal site
 #### day 57
 - Flask and blog
+#### day 58
+- Web foundations Bootstrap
+- TinDog project - Tinder for dogs
+#### day 59
+- Blog project - Flask and Bootstrap
