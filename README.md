@@ -177,3 +177,5 @@
 - Flask POST requests and forms
 #### day 61
 - Flask advanced forms and validation
+#### day 62
+- Flask forms coffee shop project - csv file and bootstrap
