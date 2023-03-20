@@ -179,3 +179,5 @@
 - Flask advanced forms and validation
 #### day 62
 - Flask forms coffee shop project - csv file and bootstrap
+#### day 63
+- Flask Library project - SQLite database

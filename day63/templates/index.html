@@ -1,0 +1,41 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Library{% endblock %}
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>My Library</h1>
+ {% if books %}
+    <ul>
+        {% for book in books %}
+        <form class="row" action="{{ url_for('edit') }}" method="POST">
+
+            <li>{{ book.name }} by {{ book.author }} - Rating:
+                <select name="rating" id="rating" class="form-control  col-4"">
+                <option value="1" {% if book.rating == 1 %}selected{% endif %}>1</option>
+                <option value="2" {% if book.rating == 2 %}selected{% endif %}>2</option>
+                <option value="3" {% if book.rating == 3 %}selected{% endif %}>3</option>
+                <option value="4" {% if book.rating == 4 %}selected{% endif %}>4</option>
+                <option value="5" {% if book.rating == 5 %}selected{% endif %}>5</option>
+                </select>
+                <input class="btn btn-success" type="submit" value="Update"/>
+                <input type="hidden" name="book_id" value="{{ book.id }}"/>
+            </li>
+        </form>
+
+        <form class="row" action="{{ url_for('delete') }}" method="POST">
+            <input class="btn btn-danger" type="submit" value="Delete"/>
+            <input type="hidden" name="book_id" value="{{ book.id }}"/>
+        </form>
+
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No books in your library yet.</p>
+{% endif %}
+    
+<a href="{{ url_for('add') }}">Add a new book</a>
+{% endblock %}
