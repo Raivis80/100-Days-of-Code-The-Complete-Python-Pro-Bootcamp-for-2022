@@ -181,3 +181,7 @@
 - Flask forms coffee shop project - csv file and bootstrap
 #### day 63
 - Flask Library project - SQLite database
+#### day 64
+- Flask top 10 books project - SQLite database sqlalchemy
+#### day 65
+- Flask and Movies project - SQLite database sqlalchemy
