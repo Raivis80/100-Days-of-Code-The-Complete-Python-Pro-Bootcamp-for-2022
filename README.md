@@ -185,3 +185,5 @@
 - Flask top 10 books project - SQLite database sqlalchemy
 #### day 65
 - Flask and Movies project - SQLite database sqlalchemy
+#### day 66
+- Flask and restful APIs - GET POST PUT PATCH DELETE
