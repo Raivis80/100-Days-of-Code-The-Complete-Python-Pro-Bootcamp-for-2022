@@ -189,3 +189,5 @@
 - Flask and restful APIs - GET POST PUT PATCH DELETE
 #### day 67
 - Flask and restful APIs - Blog capstone project
+#### day 68
+- Flask Authentication and security
