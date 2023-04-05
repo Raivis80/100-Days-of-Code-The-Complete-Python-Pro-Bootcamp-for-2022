@@ -191,3 +191,5 @@
 - Flask and restful APIs - Blog capstone project
 #### day 68
 - Flask Authentication and security
+#### day 69
+- Flask Blog project - Authentication and security
